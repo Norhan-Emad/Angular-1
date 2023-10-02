@@ -1,0 +1,46 @@
+.container{
+  min-height: 100dvh;
+}
+.icon{
+  position: relative;
+}
+.icon::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 8%;
+  height: 4px;
+  background-color: #2C3E50;
+}
+.icon::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  width: 8%;
+  height: 4px;
+  background-color: #2C3E50;
+}
+.text-color{
+  color: #2C3E50;
+}
+input{
+  border: none;
+  border-bottom: 1px solid rgb(178, 178, 178);
+  margin-bottom: 1.25rem;
+  padding-block: .625rem;
+}
+input:focus{
+  box-shadow: none;
+  outline: none;
+}
+button{
+  background-color: #1ABC9C;
+}
+button:focus{
+  background-color: #1ABC9C;
+}
+.contact-color{
+color:#1ABC9C ;
+}

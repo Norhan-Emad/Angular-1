@@ -1,0 +1,63 @@
+<section>
+  <div id="portfolio ">
+    <div class="position-fixed min-vh-100 w-100 bg-info bg-opacity-50 top-0 start-0  z-2" *ngIf="pathName !='' ">
+        <div class="img container d-flex justify-content-center align-items-center" (click)="show('')">
+          <div class="content" >
+            <img src="{{pathName}}" alt="image" (click)="show(pathName)">
+          </div>
+        </div>
+      </div>
+    <div class="container d-flex justify-content-center align-items-center">
+      <div class="content">
+        <header class="pb-3">
+          <h1 class="fw-bold text-center text-color">PORTFOLIO COMPONENT</h1>
+          <div class="icon mb-3 text-center text-color">
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </header>
+        <div class="images">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="image">
+                <img [src]="pathImage1" alt="post1" class="w-100 mb-4 rounded-3" >
+                <div class="icon1"><i class="fa-solid fa-plus" (click)="show(pathImage1)"></i></div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="image">
+                <img [src]="pathImage2" alt="post1" class="w-100 mb-4 rounded-3" >
+                <div class="icon1"><i class="fa-solid fa-plus" (click)="show(pathImage2)"></i></div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="image">
+                <img [src]="pathImage3" alt="post1" class="w-100 mb-4 rounded-3" >
+                <div class="icon1"><i class="fa-solid fa-plus" (click)="show(pathImage3)"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="image">
+                <img [src]="pathImage1" alt="post1" class="w-100 mb-4 rounded-3" >
+                <div class="icon1"><i class="fa-solid fa-plus" (click)="show(pathImage1)"></i></div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="image">
+                <img [src]="pathImage2" alt="post1" class="w-100 mb-4 rounded-3" >
+                <div class="icon1"><i class="fa-solid fa-plus" (click)="show(pathImage2)"></i></div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="image">
+                <img [src]="pathImage3" alt="post1" class="w-100 mb-4 rounded-3" >
+                <div class="icon1"><i class="fa-solid fa-plus" (click)="show(pathImage3)"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+<section>
+  <div id="contact">
+    <div class="container d-flex justify-content-center align-items-center">
+      <div class="content">
+        <header class="pb-3">
+          <h1 class="fw-bold text-center text-color">CONATCT SECTION</h1>
+          <div class="icon mb-3 text-center text-color">
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </header>
+        <form class="row g-3 w-75 m-auto">
+          <div class="col-12">
+            <label for="inputEmail4" class="form-label contact-color fs-5" *ngIf="inputNameValue!=''">UserName:</label>
+            <input [(ngModel)]="inputNameValue" type="text" class="form-control" id="UserName" placeholder="UserName" name="name" />
+          </div>
+          <div class="col-12">
+            <label for="inputEmail4" class="form-label contact-color fs-5" *ngIf="inputAgeValue!=''">UserAge:</label>
+            <input [(ngModel)]="inputAgeValue" type="number" class="form-control" id="UserAge" placeholder="UserAge" name="age">
+          </div>
+          <div class="col-12">
+            <label for="inputEmail4" class="form-label contact-color fs-5" *ngIf="inputEmailValue!=''">UserEmail:</label>
+            <input [(ngModel)]="inputEmailValue" type="email" class="form-control" id="UserEmail" placeholder="UserEmail" name="em">
+          </div>
+          <div class="col-12">
+            <label for="inputEmail4" class="form-label contact-color fs-5" *ngIf="inputPasswordValue!=''">UserPassword:</label>
+            <input [(ngModel)]="inputPasswordValue" type="password" class="form-control" id="UserPassword" placeholder="UserPassword" name="password">
+          </div>
+          <button type="button" class="btn text-white w-25 fs-5">send message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
